@@ -14,15 +14,14 @@ public abstract class Rombo extends Figura {
 }
 
 public class Figuras {
-    Vector<Cuadrado> cuadrados = new Vector<Cuadrado>();
-    Vector<Circulo> circulos = new Vector<Circulo>();
+    Vector<Figura> figuras = new Vector<Figura>();
 
-    public void addFigura(Figura2 f) {
+    public void addFigura(Figura f) {
         figuras.add(f);
     }
 
     public void dibujarFiguras() {
-        for (Figura2 f : figuras) {
+        for (Figura f : figuras) {
             f.dibujar();
         }
     }
